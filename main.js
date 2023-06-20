@@ -4,7 +4,6 @@ function tocaSom (idElementoAudio) {
 
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-
 for (let i = 0; i < listaDeTeclas.length; i++) {
 
     const tecla = listaDeTeclas[i];
@@ -14,7 +13,6 @@ for (let i = 0; i < listaDeTeclas.length; i++) {
     tecla.onclick = function () {
         tocaSom(idAudio);
     }
-
     tecla.onkeydown = function (evento) {
         const codeKey = evento.code;
 
